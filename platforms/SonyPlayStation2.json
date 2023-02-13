@@ -21,10 +21,10 @@
             {
             "gamePathList": [],
             "directoryPath": "",
-            "gameScraper":{
+            "gameScraper":[{
             "coverPicture": "",
             "backgroundPicture": "",
-              },
+              }],
             }
         ],
         "extra": ""
