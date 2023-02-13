@@ -67,7 +67,7 @@
             "component_name": "com.retroarch.aarch64.com.retroarch.browser.retroactivity.RetroActivityFuture",
             "flag_clear_top": "FLAG_ACTIVITY_CLEAR_TOP",
             "flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
-            "arguments": [{
+            "arguments": {
             "ROM": "{file.uri}",
             "LIBRETRO": "/data/data/com.retroarch.aarch64/cores/play_libretro_android.so",
             "CONFIGFILE":"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
@@ -76,7 +76,7 @@
             "APK": "/data/app/com.retroarch.aarch64-1/base.apk",
             "SDCARD": "/storage/emulated/0",
             "EXTERNAL": "/storage/emulated/0/Android/data/com.retroarch.aarch64/files",
-                         }],
+                         },
             "extra": ""
         },
         {
