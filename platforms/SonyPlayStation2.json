@@ -1,140 +1,137 @@
 {
-    "databaseVersion": 8,
-    "revisionNumber": 2,
-    "platform": {
-        "name": "Sony PlayStation 2",
-        "shortname": "ps2",
-        "description": null,
-        "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$",
-        "scraperSourceList":[ {
-            "DSESS:BOX_ART_1": "https://thegamesdb.net/search.php?name=scraperKeyword&platform_id%5B%5D=11&dsess_selector=img.card-img-top&dsess_attribute=src&dsess_replacer=images%5C%2F.%2A%5C%2Fboxart&dsess_replacer_value=images%2Foriginal%2Fboxart",
-            "DSESS:BOX_ART_2": "https://www.mobygames.com/search/quick?q=scraperKeyword&p=7&search=Go&sFilter=1&sG=on&dsess_target_site_selector=div.searchTitle+a&dsess_target_site=%5Ehttps%3A%5C%2F%5C%2Fwww%5C.mobygames%5C.com%5C%2Fgame%5C%2Fmsx%5C%2F.%2A%24&dsess_selector=div%23coreGameCover+img&dsess_attribute=src&dsess_replacer=%5C%2Fs%5C%2F&dsess_replacer_value=%2Fl%2F"
-        }],
-        "boxArtAspectRatioId": 2,
-        "useCustomBoxArtAspectRatio": false,
-        "customBoxArtAspectRatio": null,
-        "screenAspectRatioId": 0,
-        "useCustomScreenAspectRatio": false,
-        "customScreenAspectRatio": null,
-        "retroAchievementsAlias": "PlayStation 2",
-        "directory": 
-            {
-            "gamePathList": [],
-            "directoryPath": "",
-            "gameScraper":[{
-            "coverPicture": "",
-            "backgroundPicture": "",
-              }],
-            },
-        
-        "extra": ""
-    },
-    "playerList": [
-        {
-            "name": "ps2 - Aethersx2",
-            "extensions": ".iso, .chd, .gz",
-            "description": "Supported extensions: iso, chd, gz.",
-            "acceptedFilenameRegex": "^(.*).(?:iso|chd|gz)$",
-            "killPackageProcesses": true,
-            "killPackageProcessesWarning": true,
-            "action": "action_main",
-            "package_name": "xyz.aethersx2.android",
-            "component_name": "xyz.aethersx2.android.EmulationActivity",
-            "flag_clear_top":"FLAG_ACTIVITY_CLEAR_TOP",
-            "flag_clear_task":"FLAG_ACTIVITY_CLEAR_TASK",
-            "arguments": {
-            "bootPath": "{file.uri}"
-                         },
-            "extra": ""
-        },
-        {
-            "name": "ps2 - Aethersx2 Turnip",
-            "extensions": ".iso, .chd, .gz",
-            "description": "Supported extensions: iso, chd, gz.",
-            "acceptedFilenameRegex": "^(.*).(?:iso|chd|gz)$",
-            "killPackageProcesses": true,
-            "killPackageProcessesWarning": true,
-            "action": "action_main",
-            "package_name": "xyz.aethersx2.custom",
-            "component_name": "xyz.aethersx2.custom.EmulationActivity",
-            "flag_clear_top":"FLAG_ACTIVITY_CLEAR_TOP",
-            "flag_clear_task":"FLAG_ACTIVITY_CLEAR_TASK",
-            "arguments": {
-            "bootPath": "{file.uri}"
-                         },
-            "extra": ""
-        },
-        {
-            "name": "ps2 - RetroArch 64 - play",
-            "extensions": ".bin, .cso, .elf, .iso, .isz",
-            "description": "Supported extensions: bin, cso, elf, iso, isz.",
-            "acceptedFilenameRegex": "^(.*)\\.(?:bin|cso|elf|iso|isz)$",
-            "killPackageProcesses": true,
-            "killPackageProcessesWarning": true,
-            "action": "action_main",
-            "package_name": "com.retroarch.aarch64",
-            "component_name": "com.retroarch.aarch64.com.retroarch.browser.retroactivity.RetroActivityFuture",
-            "flag_clear_top": "FLAG_ACTIVITY_CLEAR_TOP",
-            "flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
-            "arguments": {
-            "ROM": "{file.uri}",
-            "LIBRETRO": "/data/data/com.retroarch.aarch64/cores/play_libretro_android.so",
-            "CONFIGFILE":"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
-            "IME": "com.android.inputmethod.latin.LatinIME",
-            "DATADIR": "/data/data/com.retroarch.aarch64",
-            "APK": "/data/app/com.retroarch.aarch64-1/base.apk",
-            "SDCARD": "/storage/emulated/0",
-            "EXTERNAL": "/storage/emulated/0/Android/data/com.retroarch.aarch64/files",
-                         },
-            "extra": ""
-        },
-        {
-            "name": "ps2 - RetroArch 32 - play",
-            "extensions": ".bin, .cso, .elf, .iso, .isz",
-            "description": "Supported extensions: bin, cso, elf, iso, isz.",
-            "acceptedFilenameRegex": "^(.*)\\.(?:bin|cso|elf|iso|isz)$",
-            "killPackageProcesses": true,
-            "killPackageProcessesWarning": true,
-            "action": "action_main",
-            "package_name": "com.retroarch.ra32",
-            "component_name": "com.retroarch.ra32.com.retroarch.browser.retroactivity.RetroActivityFuture",
-            "flag_clear_top":"FLAG_ACTIVITY_CLEAR_TOP",
-            "flag_clear_task":"FLAG_ACTIVITY_CLEAR_TASK",
-            "arguments": {
-            "ROM": "{file.uri}",
-            "LIBRETRO": "/data/data/com.retroarch.ra32/cores/play_libretro_android.so",
-            "CONFIGFILE": "/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
-            "IME": "com.android.inputmethod.latin.LatinIME",
-            "DATADIR": "/data/data/com.retroarch.ra32",
-            "APK": "/data/app/com.retroarch.ra32-1/base.apk",
-            "SDCARD": "/storage/emulated/0",
-            "EXTERNAL": "/storage/emulated/0/Android/data/com.retroarch.ra32/files",
-                         },
-            "extra": ""
-        },
-        {
-            "name": "ps2 - RetroArch - play",
-            "extensions": ".bin, .cso, .elf, .iso, .isz",
-            "description": "Supported extensions: bin, cso, elf, iso, isz.",
-            "acceptedFilenameRegex": "^(.*)\\.(?:bin|cso|elf|iso|isz)$",
-            "killPackageProcesses": true,
-            "killPackageProcessesWarning": true,
-            "action": "action_main",
-            "package_name": "com.retroarch",
-            "component_name": "com.retroarch.com.retroarch.browser.retroactivity.RetroActivityFuture",
-            "flag_clear_top":"FLAG_ACTIVITY_CLEAR_TOP",
-            "flag_clear_task":"FLAG_ACTIVITY_CLEAR_TASK",
-            "arguments":{
-            "ROM": "{file.uri}",
-            "LIBRETRO": "/data/data/com.retroarch/cores/play_libretro_android.so",
-            "CONFIGFILE": "/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
-            "IME": "com.android.inputmethod.latin.LatinIME",
-            "DATADIR": "/data/data/com.retroarch",
-            "APK": "/data/app/com.retroarch-1/base.apk",
-            "SDCARD": "/storage/emulated/0",
-            "EXTERNAL": "/storage/emulated/0/Android/data/com.retroarch/files",
-                         },
-            "extra": ""
-        }
-    ]
+	"databaseVersion": 8,
+	"revisionNumber": 2,
+	"platform": {
+		"name": "Sony PlayStation 2",
+		"shortname": "ps2",
+		"description": null,
+		"acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$",
+		"scraperSourceList": [{
+			"DSESS:BOX_ART_1": "https://thegamesdb.net/search.php?name=scraperKeyword&platform_id%5B%5D=11&dsess_selector=img.card-img-top&dsess_attribute=src&dsess_replacer=images%5C%2F.%2A%5C%2Fboxart&dsess_replacer_value=images%2Foriginal%2Fboxart",
+			"DSESS:BOX_ART_2": "https://www.mobygames.com/search/quick?q=scraperKeyword&p=7&search=Go&sFilter=1&sG=on&dsess_target_site_selector=div.searchTitle+a&dsess_target_site=%5Ehttps%3A%5C%2F%5C%2Fwww%5C.mobygames%5C.com%5C%2Fgame%5C%2Fmsx%5C%2F.%2A%24&dsess_selector=div%23coreGameCover+img&dsess_attribute=src&dsess_replacer=%5C%2Fs%5C%2F&dsess_replacer_value=%2Fl%2F"
+		}],
+		"boxArtAspectRatioId": 2,
+		"useCustomBoxArtAspectRatio": false,
+		"customBoxArtAspectRatio": null,
+		"screenAspectRatioId": 0,
+		"useCustomScreenAspectRatio": false,
+		"customScreenAspectRatio": null,
+		"retroAchievementsAlias": "PlayStation 2",
+		"extra": "",
+		"directory": {
+			"gamePathList": [],
+			"directoryPath": "",
+			"gameScraper": [{
+				"coverPicture": "",
+				"backgroundPicture": ""
+			}]
+		}
+	},
+	"playerList": [{
+			"name": "ps2 - Aethersx2",
+			"extensions": ".iso, .chd, .gz",
+			"description": "Supported extensions: iso, chd, gz.",
+			"acceptedFilenameRegex": "^(.*).(?:iso|chd|gz)$",
+			"killPackageProcesses": true,
+			"killPackageProcessesWarning": true,
+			"action": "action_main",
+			"package_name": "xyz.aethersx2.android",
+			"component_name": "xyz.aethersx2.android.EmulationActivity",
+			"flag_clear_top": "FLAG_ACTIVITY_CLEAR_TOP",
+			"flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
+			"extra": "",
+			"arguments": {
+				"bootPath": "{file.uri}"
+			}
+		},
+		{
+			"name": "ps2 - Aethersx2 Turnip",
+			"extensions": ".iso, .chd, .gz",
+			"description": "Supported extensions: iso, chd, gz.",
+			"acceptedFilenameRegex": "^(.*).(?:iso|chd|gz)$",
+			"killPackageProcesses": true,
+			"killPackageProcessesWarning": true,
+			"action": "action_main",
+			"package_name": "xyz.aethersx2.custom",
+			"component_name": "xyz.aethersx2.custom.EmulationActivity",
+			"flag_clear_top": "FLAG_ACTIVITY_CLEAR_TOP",
+			"flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
+			"extra": "",
+			"arguments": {
+				"bootPath": "{file.uri}"
+			}
+		},
+		{
+			"name": "ps2 - RetroArch 64 - play",
+			"extensions": ".bin, .cso, .elf, .iso, .isz",
+			"description": "Supported extensions: bin, cso, elf, iso, isz.",
+			"acceptedFilenameRegex": "^(.*)\\.(?:bin|cso|elf|iso|isz)$",
+			"killPackageProcesses": true,
+			"killPackageProcessesWarning": true,
+			"action": "action_main",
+			"package_name": "com.retroarch.aarch64",
+			"component_name": "com.retroarch.aarch64.com.retroarch.browser.retroactivity.RetroActivityFuture",
+			"flag_clear_top": "FLAG_ACTIVITY_CLEAR_TOP",
+			"flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
+			"arguments": {
+				"ROM": "{file.uri}",
+				"LIBRETRO": "/data/data/com.retroarch.aarch64/cores/play_libretro_android.so",
+				"CONFIGFILE": "/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+				"IME": "com.android.inputmethod.latin.LatinIME",
+				"DATADIR": "/data/data/com.retroarch.aarch64",
+				"APK": "/data/app/com.retroarch.aarch64-1/base.apk",
+				"SDCARD": "/storage/emulated/0",
+				"EXTERNAL": "/storage/emulated/0/Android/data/com.retroarch.aarch64/files"
+			},
+			"extra": ""
+		},
+		{
+			"name": "ps2 - RetroArch 32 - play",
+			"extensions": ".bin, .cso, .elf, .iso, .isz",
+			"description": "Supported extensions: bin, cso, elf, iso, isz.",
+			"acceptedFilenameRegex": "^(.*)\\.(?:bin|cso|elf|iso|isz)$",
+			"killPackageProcesses": true,
+			"killPackageProcessesWarning": true,
+			"action": "action_main",
+			"package_name": "com.retroarch.ra32",
+			"component_name": "com.retroarch.ra32.com.retroarch.browser.retroactivity.RetroActivityFuture",
+			"flag_clear_top": "FLAG_ACTIVITY_CLEAR_TOP",
+			"flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
+			"arguments": {
+				"ROM": "{file.uri}",
+				"LIBRETRO": "/data/data/com.retroarch.ra32/cores/play_libretro_android.so",
+				"CONFIGFILE": "/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+				"IME": "com.android.inputmethod.latin.LatinIME",
+				"DATADIR": "/data/data/com.retroarch.ra32",
+				"APK": "/data/app/com.retroarch.ra32-1/base.apk",
+				"SDCARD": "/storage/emulated/0",
+				"EXTERNAL": "/storage/emulated/0/Android/data/com.retroarch.ra32/files"
+			},
+			"extra": ""
+		},
+		{
+			"name": "ps2 - RetroArch - play",
+			"extensions": ".bin, .cso, .elf, .iso, .isz",
+			"description": "Supported extensions: bin, cso, elf, iso, isz.",
+			"acceptedFilenameRegex": "^(.*)\\.(?:bin|cso|elf|iso|isz)$",
+			"killPackageProcesses": true,
+			"killPackageProcessesWarning": true,
+			"action": "action_main",
+			"package_name": "com.retroarch",
+			"component_name": "com.retroarch.com.retroarch.browser.retroactivity.RetroActivityFuture",
+			"flag_clear_top": "FLAG_ACTIVITY_CLEAR_TOP",
+			"flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
+			"arguments": {
+				"ROM": "{file.uri}",
+				"LIBRETRO": "/data/data/com.retroarch/cores/play_libretro_android.so",
+				"CONFIGFILE": "/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+				"IME": "com.android.inputmethod.latin.LatinIME",
+				"DATADIR": "/data/data/com.retroarch",
+				"APK": "/data/app/com.retroarch-1/base.apk",
+				"SDCARD": "/storage/emulated/0",
+				"EXTERNAL": "/storage/emulated/0/Android/data/com.retroarch/files"
+			},
+			"extra": ""
+		}
+	]
 }
