@@ -32,6 +32,7 @@
     "playerList": [
         {
             "name": "ps2 - Aethersx2",
+            "extensions": ".iso, .chd, .gz"
             "description": "Supported extensions: iso, chd, gz.",
             "acceptedFilenameRegex": "^(.*).(?:iso|chd|gz)$",
             "killPackageProcesses": true,
@@ -48,6 +49,7 @@
         },
         {
             "name": "ps2 - Aethersx2 Turnip",
+            "extensions": ".iso, .chd, .gz"
             "description": "Supported extensions: iso, chd, gz.",
             "acceptedFilenameRegex": "^(.*).(?:iso|chd|gz)$",
             "killPackageProcesses": true,
@@ -64,6 +66,7 @@
         },
         {
             "name": "ps2 - RetroArch 64 - play",
+            "extensions": ".bin, .cso, .elf, .iso, .isz"
             "description": "Supported extensions: bin, cso, elf, iso, isz.",
             "acceptedFilenameRegex": "^(.*)\\.(?:bin|cso|elf|iso|isz)$",
             "killPackageProcesses": true,
@@ -111,6 +114,7 @@
         },
         {
             "name": "ps2 - RetroArch - play",
+            "extensions": ".bin, .cso, .elf, .iso, .isz"
             "description": "Supported extensions: bin, cso, elf, iso, isz.",
             "acceptedFilenameRegex": "^(.*)\\.(?:bin|cso|elf|iso|isz)$",
             "killPackageProcesses": true,
