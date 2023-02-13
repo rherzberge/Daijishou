@@ -6,11 +6,10 @@
         "shortname": "ps2",
         "description": null,
         "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$",
-        "scraperSourceList": [
-            "LIBRETRO:Sony - PlayStation 2",
-            "DSESS:BOX_ART:TAGS(scraperKeyword):https://thegamesdb.net/search.php?name=%7BscraperKeyword%7D&platform_id%5B%5D=11&dsess_selector=img.card-img-top&dsess_attribute=src&dsess_replacer=images%5C%2F.%2A%5C%2Fboxart&dsess_replacer_value=images%2Foriginal%2Fboxart",
-            "DSESS:BOX_ART:TAGS(scraperKeyword):https://www.mobygames.com/search/quick?q=%7BscraperKeyword%7D&p=7&search=Go&sFilter=1&sG=on&dsess_target_site_selector=div.searchTitle+a&dsess_target_site=%5Ehttps%3A%5C%2F%5C%2Fwww%5C.mobygames%5C.com%5C%2Fgame%5C%2Fmsx%5C%2F.%2A%24&dsess_selector=div%23coreGameCover+img&dsess_attribute=src&dsess_replacer=%5C%2Fs%5C%2F&dsess_replacer_value=%2Fl%2F"
-        ],
+        "scraperSourceList": {
+            "DSESS:BOX_ART_1": "https://thegamesdb.net/search.php?name=scraperKeyword&platform_id%5B%5D=11&dsess_selector=img.card-img-top&dsess_attribute=src&dsess_replacer=images%5C%2F.%2A%5C%2Fboxart&dsess_replacer_value=images%2Foriginal%2Fboxart",
+            "DSESS:BOX_ART_2": "https://www.mobygames.com/search/quick?q=scraperKeyword&p=7&search=Go&sFilter=1&sG=on&dsess_target_site_selector=div.searchTitle+a&dsess_target_site=%5Ehttps%3A%5C%2F%5C%2Fwww%5C.mobygames%5C.com%5C%2Fgame%5C%2Fmsx%5C%2F.%2A%24&dsess_selector=div%23coreGameCover+img&dsess_attribute=src&dsess_replacer=%5C%2Fs%5C%2F&dsess_replacer_value=%2Fl%2F"
+        },
         "boxArtAspectRatioId": 2,
         "useCustomBoxArtAspectRatio": false,
         "customBoxArtAspectRatio": null,
@@ -18,6 +17,16 @@
         "useCustomScreenAspectRatio": false,
         "customScreenAspectRatio": null,
         "retroAchievementsAlias": "PlayStation 2",
+        "directory": [
+            {
+            "gamePathList": [],
+            "directoryPath": "",
+            "gameScraper":{
+            "coverPicture": "",
+            "backgroundPicture": "",
+              },
+            }
+        ],
         "extra": ""
     },
     "playerList": [
@@ -33,7 +42,7 @@
             "flag_clear_top":"FLAG_ACTIVITY_CLEAR_TOP",
             "flag_clear_task":"FLAG_ACTIVITY_CLEAR_TASK",
             "arguments": {
-            "bootPath": "bootPath {file.uri}"
+            "bootPath": "{file.uri}"
                          },
             "extra": ""
         },
@@ -49,7 +58,7 @@
             "flag_clear_top":"FLAG_ACTIVITY_CLEAR_TOP",
             "flag_clear_task":"FLAG_ACTIVITY_CLEAR_TASK",
             "arguments": {
-            "bootPath": "bootPath {file.uri}"
+            "bootPath": "{file.uri}"
                          },
             "extra": ""
         },
