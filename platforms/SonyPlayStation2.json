@@ -17,16 +17,7 @@
         "useCustomScreenAspectRatio": false,
         "customScreenAspectRatio": null,
         "retroAchievementsAlias": "PlayStation 2",
-        "directory": [
-            {
-            "gamePathList": [],
-            "directoryPath": "",
-            "gameScraper":[{
-            "coverPicture": "",
-            "backgroundPicture": "",
-              }],
-            }
-        ],
+        
         "extra": ""
     },
     "playerList": [
