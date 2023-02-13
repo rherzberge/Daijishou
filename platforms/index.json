@@ -1,5 +1,5 @@
 {
-  "baseUri": "https://raw.githubusercontent.com/rherzberge/Daijishou/paradise-distortion/platforms/",
+  "baseUri": "https://raw.githubusercontent.com/rherzberge/Paradise-Distortion/paradise-distortion/platforms/",
   "platformList": [
     {
       "filename": "GameBoy.json",
