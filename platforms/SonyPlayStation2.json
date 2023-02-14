@@ -41,7 +41,7 @@
 			"flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
 			"extra": "",
 			"arguments": {
-				"bootPath": "{file.uri}"
+				"bootPath": ""
 			}
 		},
 		{
@@ -58,7 +58,7 @@
 			"flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
 			"extra": "",
 			"arguments": {
-				"bootPath": "{file.uri}"
+				"bootPath": ""
 			}
 		},
 		{
@@ -75,7 +75,7 @@
 			"flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
 			"extra": "",
 			"arguments": {
-				"ROM": "{file.uri}",
+				"ROM": "",
 				"LIBRETRO": "/data/data/com.retroarch.aarch64/cores/play_libretro_android.so",
 				"CONFIGFILE": "/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
 				"IME": "com.android.inputmethod.latin.LatinIME",
@@ -100,7 +100,7 @@
 			"flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
 			"extra": "",
 			"arguments": {
-				"ROM": "{file.uri}",
+				"ROM": "",
 				"LIBRETRO": "/data/data/com.retroarch.ra32/cores/play_libretro_android.so",
 				"CONFIGFILE": "/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
 				"IME": "com.android.inputmethod.latin.LatinIME",
@@ -125,7 +125,7 @@
 			"flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
 			"extra": "",
 			"arguments": {
-				"ROM": "{file.uri}",
+				"ROM": "",
 				"LIBRETRO": "/data/data/com.retroarch/cores/play_libretro_android.so",
 				"CONFIGFILE": "/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
 				"IME": "com.android.inputmethod.latin.LatinIME",
