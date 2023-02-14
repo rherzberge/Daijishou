@@ -1,25 +1,24 @@
 {
-    "databaseVersion": 8,
-    "revisionNumber": 1,
-    "platform": {
-        "name": "Nintendo Switch",
-        "shortname": "switch",
-        "description": null,
-        "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$",
-       "scraperSourceList": [{
-          "BOX_ART_1": "https://www.switchscores.com/games/search?search_keywords=scraperKeyword&dsess_target_site_selector=div.col-xs-9.col-sm-9.col-md-9.col-lg-9+a&dsess_target_site=%5Ehttps%3A%5C%2F%5C%2Fwww%5C.switchscores%5C.com%5C%2Fgames%5C%2F.%2A%24&dsess_selector=div.col-md-8+%3E+img.img-responsive&dsess_attribute=src",
-          "BOX_ART_2": "https://www.mobygames.com/search/quick?q=scraperKeyword&p=203&search=Go&sFilter=1&sG=on&dsess_target_site_selector=div.searchTitle+a&dsess_target_site=%5Ehttps%3A%5C%2F%5C%2Fwww%5C.mobygames%5C.com%5C%2Fgame%5C%2Fswitch%5C%2F.%2A%24&dsess_selector=div.col-md-8.col-lg-8+div.row+img&dsess_attribute=src&dsess_replacer=%5C%2Fs%5C%2F&dsess_replacer_value=%2Fl%2F",
-   
-        }],
-        "boxArtAspectRatioId": 0,
-        "useCustomBoxArtAspectRatio": false,
-        "customBoxArtAspectRatio": null,
-        "screenAspectRatioId": 0,
-        "useCustomScreenAspectRatio": true,
-        "customScreenAspectRatio": "1.85:1",
-        "retroAchievementsAlias": null,
-        "extra": "",
-        "directory": {
+	"databaseVersion": 8,
+	"revisionNumber": 1,
+	"platform": {
+		"name": "Nintendo Switch",
+		"shortname": "switch",
+		"description": null,
+		"acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$",
+		"scraperSourceList": [{
+			"BOX_ART_1": "https://www.switchscores.com/games/search?search_keywords=scraperKeyword&dsess_target_site_selector=div.col-xs-9.col-sm-9.col-md-9.col-lg-9+a&dsess_target_site=%5Ehttps%3A%5C%2F%5C%2Fwww%5C.switchscores%5C.com%5C%2Fgames%5C%2F.%2A%24&dsess_selector=div.col-md-8+%3E+img.img-responsive&dsess_attribute=src",
+			"BOX_ART_2": "https://www.mobygames.com/search/quick?q=scraperKeyword&p=203&search=Go&sFilter=1&sG=on&dsess_target_site_selector=div.searchTitle+a&dsess_target_site=%5Ehttps%3A%5C%2F%5C%2Fwww%5C.mobygames%5C.com%5C%2Fgame%5C%2Fswitch%5C%2F.%2A%24&dsess_selector=div.col-md-8.col-lg-8+div.row+img&dsess_attribute=src&dsess_replacer=%5C%2Fs%5C%2F&dsess_replacer_value=%2Fl%2F"
+		}],
+		"boxArtAspectRatioId": 0,
+		"useCustomBoxArtAspectRatio": false,
+		"customBoxArtAspectRatio": null,
+		"screenAspectRatioId": 0,
+		"useCustomScreenAspectRatio": true,
+		"customScreenAspectRatio": "1.85:1",
+		"retroAchievementsAlias": null,
+		"extra": "",
+		"directory": {
 			"gamePathList": [],
 			"directoryPath": "",
 			"gameScraper": [{
@@ -27,24 +26,22 @@
 				"backgroundPicture": ""
 			}]
 		}
-    },
-    "playerList": [
-        {
-            "name": "switch - Skyline",
-            "description": "Supported extensions: nro, nso, nca, xci, nsp.",
-            "acceptedFilenameRegex": "^(.*)\\.(?:nro|nso|nca|xci|nsp)$",
-            "killPackageProcesses": false,
-            "killPackageProcessesWarning": false,
-            "extra": "",
-            "action": "action_view",
-	    "package_name": "skyline.emu",
-	    "component_name": "skyline.emu.emu.skyline.EmulationActivity",
-	    "flag_clear_top": "FLAG_ACTIVITY_CLEAR_TOP",
-	    "flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
-	    "extra": "",
-	    "arguments": {
-		"bootPath": ""
-			}
-        }
-    ]
+	},
+	"playerList": [{
+		"name": "switch - Skyline",
+		"extensions": ".nro, .nso, .nca, .xci, .nsp",
+		"description": "Supported extensions: nro, nso, nca, xci, nsp.",
+		"acceptedFilenameRegex": "^(.*)\\.(?:nro|nso|nca|xci|nsp)$",
+		"killPackageProcesses": false,
+		"killPackageProcessesWarning": false,
+		"extra": "",
+		"action": "action_view",
+		"package_name": "skyline.emu",
+		"component_name": "skyline.emu.emu.skyline.EmulationActivity",
+		"flag_clear_top": "FLAG_ACTIVITY_CLEAR_TOP",
+		"flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
+		"arguments": {
+			"bootPath": ""
+		}
+	}]
 }
