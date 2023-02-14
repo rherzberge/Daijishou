@@ -37,13 +37,13 @@
             "killPackageProcessesWarning": false,
             "extra": "",
             "action": "action_view",
-			"package_name": "skyline.emu",
-			"component_name": "skyline.emu.emu.skyline.EmulationActivity",
-			"flag_clear_top": "FLAG_ACTIVITY_CLEAR_TOP",
-			"flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
-			"extra": "",
-			"arguments": {
-				"bootPath": ""
+	    "package_name": "skyline.emu",
+	    "component_name": "skyline.emu.emu.skyline.EmulationActivity",
+	    "flag_clear_top": "FLAG_ACTIVITY_CLEAR_TOP",
+	    "flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
+	    "extra": "",
+	    "arguments": {
+		"bootPath": ""
 			}
         }
     ]
