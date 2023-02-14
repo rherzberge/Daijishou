@@ -57,9 +57,9 @@
 			"flag_clear_top": "FLAG_ACTIVITY_CLEAR_TOP",
 			"flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
 			"extra": "",
-			"arguments": [{
+			"arguments": {
 				"bootPath": "{file.uri}"
-			}]
+			}
 		},
 		{
 			"name": "ps2 - RetroArch 64 - play",
@@ -74,7 +74,7 @@
 			"flag_clear_top": "FLAG_ACTIVITY_CLEAR_TOP",
 			"flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
 			"extra": "",
-			"arguments": [{
+			"arguments": {
 				"ROM": "{file.uri}",
 				"LIBRETRO": "/data/data/com.retroarch.aarch64/cores/play_libretro_android.so",
 				"CONFIGFILE": "/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
@@ -83,7 +83,7 @@
 				"APK": "/data/app/com.retroarch.aarch64-1/base.apk",
 				"SDCARD": "/storage/emulated/0",
 				"EXTERNAL": "/storage/emulated/0/Android/data/com.retroarch.aarch64/files"
-			}]
+			}
 			
 		},
 		{
@@ -99,7 +99,7 @@
 			"flag_clear_top": "FLAG_ACTIVITY_CLEAR_TOP",
 			"flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
 			"extra": "",
-			"arguments": [{
+			"arguments": {
 				"ROM": "{file.uri}",
 				"LIBRETRO": "/data/data/com.retroarch.ra32/cores/play_libretro_android.so",
 				"CONFIGFILE": "/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
@@ -108,7 +108,7 @@
 				"APK": "/data/app/com.retroarch.ra32-1/base.apk",
 				"SDCARD": "/storage/emulated/0",
 				"EXTERNAL": "/storage/emulated/0/Android/data/com.retroarch.ra32/files"
-			}]
+			}
 			
 		},
 		{
@@ -124,7 +124,7 @@
 			"flag_clear_top": "FLAG_ACTIVITY_CLEAR_TOP",
 			"flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
 			"extra": "",
-			"arguments": [{
+			"arguments": {
 				"ROM": "{file.uri}",
 				"LIBRETRO": "/data/data/com.retroarch/cores/play_libretro_android.so",
 				"CONFIGFILE": "/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
@@ -133,7 +133,7 @@
 				"APK": "/data/app/com.retroarch-1/base.apk",
 				"SDCARD": "/storage/emulated/0",
 				"EXTERNAL": "/storage/emulated/0/Android/data/com.retroarch/files"
-			}]
+			}
 			
 		}
 	]
