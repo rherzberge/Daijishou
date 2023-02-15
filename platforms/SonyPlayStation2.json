@@ -19,9 +19,7 @@
 		"retroAchievementsAlias": "PlayStation 2",
 		"extra": "",
 		"directory": {
-			"gamePathList": [
-				
-			],
+			"gamePathList": [],
 			"directoryPath": "",
 			"gameScraper": [{
 				"name": "",
