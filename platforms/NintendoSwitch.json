@@ -22,6 +22,7 @@
 			"gamePathList": [],
 			"directoryPath": "",
 			"gameScraper": [{
+				"name": "",
 				"coverPicture": "",
 				"backgroundPicture": ""
 			}]
@@ -29,7 +30,7 @@
 	},
 	"playerList": [{
 		"name": "switch - Skyline",
-		"extensions": ".nro, .nso, .nca, .xci, .nsp",
+		"extensions": [".nro", ".nso", ".nca", ".xci", ".nsp"],
 		"description": "Supported extensions: nro, nso, nca, xci, nsp.",
 		"acceptedFilenameRegex": "^(.*)\\.(?:nro|nso|nca|xci|nsp)$",
 		"killPackageProcesses": false,
