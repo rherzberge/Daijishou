@@ -17,6 +17,8 @@
 		"useCustomScreenAspectRatio": false,
 		"customScreenAspectRatio": null,
 		"retroAchievementsAlias": "PlayStation 2",
+		"backgroundPicture": "https://raw.githubusercontent.com/rherzberge/Paradise/paradise/themes/platform_wallpapers_packs/Light-Beam/ps2.jpg",
+		"coverPicture": "",
 		"extra": "",
 		"directory": {
 			"gamePathList": [],
