@@ -17,6 +17,8 @@
 		"useCustomScreenAspectRatio": true,
 		"customScreenAspectRatio": "1.85:1",
 		"retroAchievementsAlias": null,
+		"backgroundPicture": "https://raw.githubusercontent.com/rherzberge/Paradise/paradise/themes/platform_wallpapers_packs/Light-Beam/switch.jpg",
+		"coverPicture": "",
 		"extra": "",
 		"directory": {
 			"gamePathList": [],
