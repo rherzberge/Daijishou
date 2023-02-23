@@ -44,7 +44,7 @@
 		"flag_clear_top": "FLAG_ACTIVITY_CLEAR_TOP",
 		"flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
 		"arguments": {
-			"bootPath": ""
+		
 		}
       }] 
 }
