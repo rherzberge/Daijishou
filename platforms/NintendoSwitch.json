@@ -21,14 +21,16 @@
 		"coverPicture": "",
 		"extra": "",
 		"directory": {
-			"gamePathList": [],
-			"directoryPath": "",
-			"gameScraper": [{
+			"gamePathList": [{
 				"name": "",
 				"coverPicture": "",
-				"backgroundPicture": ""
-		    }]
-	      }
+				"backgroundPicture": "",
+				"discription": "",
+				"gameList": []
+			}]
+
+
+		}
 	},
 	"playerList": [{
 		"name": "switch - Skyline",
@@ -44,7 +46,7 @@
 		"flag_clear_top": "FLAG_ACTIVITY_CLEAR_TOP",
 		"flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
 		"arguments": {
-		
+
 		}
-      }] 
+	}]
 }
