@@ -20,17 +20,16 @@
 		"backgroundPicture": "https://raw.githubusercontent.com/rherzberge/Paradise/paradise/themes/platform_wallpapers_packs/Light-Beam/switch.jpg",
 		"coverPicture": "",
 		"extra": "",
-		"directory": {
-			"gamePathList": [{
-				"name": "",
-				"coverPicture": "",
-				"backgroundPicture": "",
-				"discription": "",
-				"gameList": []
-			}]
+		"gamePathList": [{
+			"name": "",
+			"coverPicture": "",
+			"backgroundPicture": "",
+			"discription": "",
+			"gameList": []
+		}]
 
 
-		}
+
 	},
 	"playerList": [{
 		"name": "switch - Skyline",
