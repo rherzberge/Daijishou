@@ -20,15 +20,13 @@
 		"backgroundPicture": "https://raw.githubusercontent.com/rherzberge/Paradise/paradise/themes/platform_wallpapers_packs/Light-Beam/ps2.jpg",
 		"coverPicture": "",
 		"extra": "",
-		"directory": {
-			"gamePathList": [],
-			"directoryPath": "",
-			"gameScraper": [{
-				"name": "",
-				"coverPicture": "",
-				"backgroundPicture": ""
-			}]
-		}
+		"gamePathList": [{
+			"name": "",
+			"coverPicture": "",
+			"backgroundPicture": "",
+			"discription": "",
+			"path": ""
+		    }]
 	},
 	"playerList": [{
 			"name": "ps2 - Aethersx2",
