@@ -20,13 +20,7 @@
 		"backgroundPicture": "https://raw.githubusercontent.com/rherzberge/Paradise/paradise/themes/platform_wallpapers_packs/Light-Beam/switch.jpg",
 		"coverPicture": "",
 		"extra": "",
-		"gamePathList": [{
-			"name": "",
-			"coverPicture": "",
-			"backgroundPicture": "",
-			"discription": "",
-			"path": ""
-		}]
+		"gamePathList": []
 
 
 
