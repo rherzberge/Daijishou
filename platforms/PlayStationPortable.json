@@ -18,53 +18,121 @@
         "useCustomScreenAspectRatio": false,
         "customScreenAspectRatio": null,
         "retroAchievementsAlias": "PlayStation Portable",
-        "extra": ""
+        "backgroundPicture": "https://raw.githubusercontent.com/rherzberge/Paradise/paradise/themes/platform_wallpapers_packs/clean-colors/PS2.png",
+		"coverPicture": "",
+		"extra": "",
+		"gamePathList": [{
+			"name": "",
+			"coverPicture": "",
+			"backgroundPicture": "",
+			"discription": "",
+			"path": ""
+		    }]
     },
     "playerList": [
         {
             "name": "psp - PPSSPP",
+            "extensions": [".cso", ".elf", ".iso", ".pbp", ".prx"],
             "description": "Supported extensions: cso, elf, iso, pbp, prx.",
             "acceptedFilenameRegex": "^(.*)\\.(?:cso|elf|iso|pbp|prx)$",
-            "amStartArguments": "-n org.ppsspp.ppsspp/.PpssppActivity\n  -a android.intent.action.VIEW\n  -d {file.uri}\n  --activity-clear-task",
             "killPackageProcesses": false,
             "killPackageProcessesWarning": true,
-            "extra": ""
+            "extra": "",
+            "action": "action_view",
+			"package_name": "org.ppsspp.ppsspp",
+			"component_name": "org.ppsspp.ppsspp.PpssppActivity",
+			"flag_clear_top": "FLAG_ACTIVITY_CLEAR_TOP",
+			"flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
+			"arguments": {
+			}
         },
         {
             "name": "psp - PPSSPP Gold",
+             "extensions": [".cso", ".elf", ".iso", ".pbp", ".prx"],
             "description": "Supported extensions: cso, elf, iso, pbp, prx.",
             "acceptedFilenameRegex": "^(.*)\\.(?:cso|elf|iso|pbp|prx)$",
-            "amStartArguments": "-n org.ppsspp.ppssppgold/org.ppsspp.ppsspp.PpssppActivity\n  -a android.intent.action.VIEW\n  -d {file.uri}",
             "killPackageProcesses": false,
             "killPackageProcessesWarning": true,
-            "extra": ""
+           "extra": "",
+            "action": "action_view",
+			"package_name": "org.ppsspp.ppssppgold",
+			"component_name": "org.ppsspp.ppsspp.PpssppActivity",
+			"flag_clear_top": "FLAG_ACTIVITY_CLEAR_TOP",
+			"flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
+			"arguments": {
+			}
         },
         {
             "name": "psp - RetroArch 64 - ppsspp",
+             "extensions": [".cso", ".elf", ".iso", ".pbp", ".prx"],
             "description": "Supported extensions: cso, elf, iso, pbp, prx.",
             "acceptedFilenameRegex": "^(.*)\\.(?:cso|elf|iso|pbp|prx)$",
-            "amStartArguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n  -e ROM {file.path}\n  -e LIBRETRO /data/data/com.retroarch.aarch64/cores/ppsspp_libretro_android.so\n  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\n  -e IME com.android.inputmethod.latin/.LatinIME\n  -e DATADIR /data/data/com.retroarch.aarch64\n  -e APK /data/app/com.retroarch.aarch64-1/base.apk\n  -e SDCARD /storage/emulated/0\n  -e EXTERNAL /storage/emulated/0/Android/data/com.retroarch.aarch64/files\n  --activity-clear-task\n  --activity-clear-top",
             "killPackageProcesses": true,
             "killPackageProcessesWarning": true,
-            "extra": ""
+            "extra": "",
+            "action": "action_view",
+			"package_name": "com.retroarch.aarch64",
+			"component_name": "com.retroarch.browser.retroactivity.RetroActivityFuture",
+			"flag_clear_top": "FLAG_ACTIVITY_CLEAR_TOP",
+			"flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
+			"arguments": {
+                "ROM": "",
+				"LIBRETRO": "/data/data/com.retroarch.aarch64/cores/ppsspp_libretro_android.so",
+				"CONFIGFILE": "/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg",
+				"IME": "com.android.inputmethod.latin.LatinIME",
+				"DATADIR": "/data/data/com.retroarch.aarch64",
+				"APK": "/data/app/com.retroarch.aarch64-1/base.apk",
+				"SDCARD": "/storage/emulated/0",
+				"EXTERNAL": "/storage/emulated/0/Android/data/com.retroarch.aarch64/files"
+			}
         },
         {
             "name": "psp - RetroArch 32 - ppsspp",
+             "extensions": [".cso", ".elf", ".iso", ".pbp", ".prx"],
             "description": "Supported extensions: cso, elf, iso, pbp, prx.",
             "acceptedFilenameRegex": "^(.*)\\.(?:cso|elf|iso|pbp|prx)$",
-            "amStartArguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n  -e ROM {file.path}\n  -e LIBRETRO /data/data/com.retroarch.ra32/cores/ppsspp_libretro_android.so\n  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\n  -e IME com.android.inputmethod.latin/.LatinIME\n  -e DATADIR /data/data/com.retroarch.ra32\n  -e APK /data/app/com.retroarch.ra32-1/base.apk\n  -e SDCARD /storage/emulated/0\n  -e EXTERNAL /storage/emulated/0/Android/data/com.retroarch.ra32/files\n  --activity-clear-task\n  --activity-clear-top",
             "killPackageProcesses": true,
             "killPackageProcessesWarning": true,
-            "extra": ""
+            "extra": "",
+            "action": "action_main",
+			"package_name": "com.retroarch.ra32",
+			"component_name": "com.retroarch.browser.retroactivity.RetroActivityFuture",
+			"flag_clear_top": "FLAG_ACTIVITY_CLEAR_TOP",
+			"flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
+			"arguments": {
+                 "ROM": "",
+				"LIBRETRO": "/data/data/com.retroarch.ra32/cores/ppsspp_libretro_android.so",
+				"CONFIGFILE": "/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg",
+				"IME": "com.android.inputmethod.latin.LatinIME",
+				"DATADIR": "/data/data/com.retroarch.ra32",
+				"APK": "/data/app/com.retroarch.ra32-1/base.apk",
+				"SDCARD": "/storage/emulated/0",
+				"EXTERNAL": "/storage/emulated/0/Android/data/com.retroarch.ra32/files"
+			}
         },
         {
             "name": "psp - RetroArch - ppsspp",
+             "extensions": [".cso", ".elf", ".iso", ".pbp", ".prx"],
             "description": "Supported extensions: cso, elf, iso, pbp, prx.",
             "acceptedFilenameRegex": "^(.*)\\.(?:cso|elf|iso|pbp|prx)$",
-            "amStartArguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n  -e ROM {file.path}\n  -e LIBRETRO /data/data/com.retroarch/cores/ppsspp_libretro_android.so\n  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\n  -e IME com.android.inputmethod.latin/.LatinIME\n  -e DATADIR /data/data/com.retroarch\n  -e APK /data/app/com.retroarch-1/base.apk\n  -e SDCARD /storage/emulated/0\n  -e EXTERNAL /storage/emulated/0/Android/data/com.retroarch/files\n  --activity-clear-task\n  --activity-clear-top",
             "killPackageProcesses": true,
             "killPackageProcessesWarning": true,
-            "extra": ""
+            "extra": "",
+            "action": "action_main",
+			"package_name": "com.retroarch",
+			"component_name": "com.retroarch.browser.retroactivity.RetroActivityFuture",
+			"flag_clear_top": "FLAG_ACTIVITY_CLEAR_TOP",
+			"flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
+			"arguments": {
+                 "ROM": "",
+				"LIBRETRO": "/data/data/com.retroarch/cores/ppsspp_libretro_android.so",
+				"CONFIGFILE": "/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg",
+				"IME": "com.android.inputmethod.latin.LatinIME",
+				"DATADIR": "/data/data/com.retroarch",
+				"APK": "/data/app/com.retroarch-1/base.apk",
+				"SDCARD": "/storage/emulated/0",
+				"EXTERNAL": "/storage/emulated/0/Android/data/com.retroarch/files"
+			}
         }
     ]
 }
