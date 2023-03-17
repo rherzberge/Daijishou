@@ -20,53 +20,93 @@
     "useCustomScreenAspectRatio": false,
     "customScreenAspectRatio": null,
     "retroAchievementsAlias": null,
-    "extra": ""
+    "extra": "",
+    "backgroundPicture": "https://raw.githubusercontent.com/rherzberge/Paradise/paradise/themes/platform_wallpapers_packs/clean-colors/Wii.png",
+    "coverPicture": "",
+		"gamePathList": []
   },
   "playerList": [
     {
       "name": "gc - Dolphin handheld",
+      "extensions": [".ciao",".dff", ".dol", ".elf", ".gcm", ".gcz", ".iso", ".tgc", ".wad", ".wbfs", ".rvz" ],
       "description": null,
       "acceptedFilenameRegex": "^(.*).(?:ciao|dff|dol|elf|gcm|gcz|iso|tgc|wad|wbfs|rvz)$",
-      "amStartArguments": "-n org.dolphinemu.handheld/org.dolphinemu.dolphinemu.ui.main.MainActivity\n  -a android.intent.action.VIEW\n  -e AutoStartFile {file.uri}",
       "killPackageProcesses": false,
       "killPackageProcessesWarning": true,
-      "extra": ""
+      "extra": "",
+      "action": "action_view",
+			"package_name": "org.dolphinemu.handheld",
+			"component_name": "org.dolphinemu.dolphinemu.ui.main.MainActivity",
+			"flag_clear_top": "FLAG_ACTIVITY_CLEAR_TOP",
+			"flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
+			"arguments": {
+				"AutoStartFile": ""
+			}
     },
     {
       "name": "wii - Dolphin org.mm.jr fork",
+       "extensions": [".ciao",".dff", ".dol", ".elf", ".gcm", ".gcz", ".iso", ".tgc", ".wad", ".wbfs", ".rvz" ],
       "description": null,
       "acceptedFilenameRegex": "^(.*).(?:ciao|dff|dol|elf|gcm|gcz|iso|tgc|wad|wbfs|rvz)$",
-      "amStartArguments": "-n org.mm.jr/org.dolphinemu.dolphinemu.ui.main.MainActivity\n  -a android.intent.action.VIEW\n  -e AutoStartFile {file.path}",
       "killPackageProcesses": false,
       "killPackageProcessesWarning": false,
-      "extra": ""
+      "extra": "",
+      "action": "action_view",
+			"package_name": "org.mm.jr",
+			"component_name": "org.dolphinemu.dolphinemu.ui.main.MainActivity",
+			"flag_clear_top": "FLAG_ACTIVITY_CLEAR_TOP",
+			"flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
+			"arguments": {
+				"AutoStartFile": ""
+			}
     },
     {
       "name": "wii - Dolphin org.mm.j fork",
       "description": null,
       "acceptedFilenameRegex": "^(.*).(?:ciao|dff|dol|elf|gcm|gcz|iso|tgc|wad|wbfs|rvz)$",
-      "amStartArguments": "-n org.mm.j/org.dolphinemu.dolphinemu.ui.main.MainActivity\n  -a android.intent.action.VIEW\n  -e AutoStartFile {file.path}",
       "killPackageProcesses": false,
       "killPackageProcessesWarning": true,
-      "extra": ""
+      "extra": "",
+      "action": "action_view",
+			"package_name": "org.mm.j",
+			"component_name": "org.dolphinemu.dolphinemu.ui.main.MainActivity",
+			"flag_clear_top": "FLAG_ACTIVITY_CLEAR_TOP",
+			"flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
+			"arguments": {
+				"AutoStartFile": ""
+			}
     },
     {
       "name": "wii - Dolphin mmjr",
       "description": null,
       "acceptedFilenameRegex": "^(.*).(?:ciao|dff|dol|elf|gcm|gcz|iso|tgc|wad|wbfs|rvz)$",
-      "amStartArguments": "-n org.dolphinemu.mmjr/org.dolphinemu.dolphinemu.ui.main.MainActivity\n  -a android.intent.action.VIEW\n  -e AutoStartFile {file.uri}",
       "killPackageProcesses": false,
       "killPackageProcessesWarning": false,
-      "extra": ""
+      "extra": "",
+      "action": "action_view",
+			"package_name": "org.dolphinemu.mmjr",
+			"component_name": "org.dolphinemu.dolphinemu.ui.main.MainActivity",
+			"flag_clear_top": "FLAG_ACTIVITY_CLEAR_TOP",
+			"flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
+			"arguments": {
+				"AutoStartFile": ""
+			}
     },
     {
       "name": "wii - org.dolphinemu.dolphinemu",
       "description": "Supported extensions: ciso, dff, dol, elf, gcm, gcz, iso, tgc, wad, wbfs, rvz.",
       "acceptedFilenameRegex": "^(.*)\\.(?:ciso|dff|dol|elf|gcm|gcz|iso|tgc|wad|wbfs|rvz)$",
-      "amStartArguments": "-n org.dolphinemu.dolphinemu/.ui.main.MainActivity\n  -a android.intent.action.VIEW\n  -e AutoStartFile {file.uri}",
       "killPackageProcesses": false,
       "killPackageProcessesWarning": true,
-      "extra": ""
+      "extra": "",
+      "action": "action_view",
+			"package_name": "org.dolphinemu.dolphinemu",
+			"component_name": "org.dolphinemu.dolphinemu.ui.main.MainActivity",
+			"flag_clear_top": "FLAG_ACTIVITY_CLEAR_TOP",
+			"flag_clear_task": "FLAG_ACTIVITY_CLEAR_TASK",
+			"arguments": {
+				"AutoStartFile": ""
+			}
     }
   ]
 }
